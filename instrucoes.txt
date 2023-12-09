@@ -1,0 +1,17 @@
+Vá no telegram, procure por BotFather e digite star para criar um novo bot
+Clique em newbot. Sem setdescrtion de um nome pro bot - bot de sinais
+Clique em token e digite o nome do bot para programação - davidsinaisbot
+Crie uma nova sala
+
+Para achar o itém correto dentro da api, crie uma variável e dentro dessa variável
+chame a função requests.get('linkdaapi')
+exemplo: resultado = requests.get('https://qualquercoisaapi.com.br')
+Depois, utilizando o print da biblioteca rick, de: print(resultado)
+Aperta F9 e depois F5, Vá em debug console no terminal, escreva resultado
+E depois (após Response [200] aparecer)digite: resultado.json(), depois resultado.json()['USDBRL]
+Após isso vc pega a informação que vc quer, neste caso, queremos a cotação do dolar frente ao real, que
+se encontra na variável 'ask'. Digite: resultado.json()['USDBRL']['ask'] 
+Copie esta ultima linha de código e crie uma variavel, conforme arquivo app.py
+Para achar o chat_id, recurso disponível na api, tem que montar uma função para obter mensagem
+e rodar no terminal para procurar o número do chat_id
+
